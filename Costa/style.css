@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER*/
+
+/*Nav*/
+
+.navbar{
+    width: 100%;
+    background-color: #090D11;
+}
+
+.nave-link{
+    color: white;
+    padding-right: 60px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    align-items: center;
+    transition: .3s;
+}
+
+.nave-link:hover{
+    color: #70b5e4;
+}
+
+.collapse{
+    line-height: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.carta{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    background-color: #70b5e4;
+    padding: 0 8px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.carta:hover{
+    box-shadow: 0 0 10px rgb(113, 213, 231);
+}
+
+.logo{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.navbar-nav .animate__animated{
+    animation-duration: 2s;
+}
+
+/* Sección del menú */
+.main {
+    background-color: #090D11;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; 
+    padding-bottom: 2%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+    position: relative;
+}
+
+.section-title::after{
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #2E86C1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.section-title:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 2%;
+    cursor: pointer;
+}
+
+/* Tarjetas */
+
+
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h2, .card h3 {
+    margin: 15px 0;
+    color: #124b70;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 0 0 15px;
+    font-weight: 300;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #124b70;
+}
+
+
+.card.featured {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.card.featured:hover {
+    transform: scale(1.05);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #70b5e4;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    background-color: #090D11;
+    color: white;
+    padding: 30px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-top {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #70b5e4;
+    transform: scale(1.1);
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid white;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.footer-content .titulo-nosotros {
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.footer-content p{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.footer-content .titulo-contacto{
+    text-align: center;
+}
+
+.footer-content .titulo-enlaces{
+    text-align: center;
+}
+
+.footer-content ul{
+    font-size: 14px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 10px 0;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #70b5e4;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.contact-info i {
+    color: white;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nave-link {
+        padding-right: 0;
+        font-size: 15px;
+    }
+
+    .carta {
+        padding: 0 5px;
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    .menu-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 90%;
+    }
+
+    .footer-content .row {
+        text-align: center;
+    }
+
+    .footer-content .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer-content .titulo-nosotros{
+        padding-left: 1px;
+    }
+    
+    .footer-content .titulo-nosotros,
+    .footer-content .titulo-enlaces,
+    .footer-content .titulo-contacto {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-content p{
+        text-align: center;
+        padding-left: 1px;
+    }
+}
